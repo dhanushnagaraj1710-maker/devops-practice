@@ -1,0 +1,7 @@
+app_name: devops-demo-api
+version: "1.0.0"
+port: 5000
+environment: development
+endpoints:
+  - health
+  - version
