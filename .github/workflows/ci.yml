@@ -22,9 +22,5 @@ jobs:
 
       - name: Run tests
         run: pytest
-      - name: Show secret is masked
-        env:
-          DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
-        run: echo "The secret starts with ${DEMO_SECRET:0:3}..."
-
+     
     
