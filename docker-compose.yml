@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - APP_VERSION=2.0.0-compose
+    volumes:
+      - .:/app
