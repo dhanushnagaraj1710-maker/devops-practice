@@ -16,5 +16,9 @@ def version():
 def ping():
     return {"message": "pong"}
 
+@app.route("/status")
+def status():
+    return {"service": "running"}
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
